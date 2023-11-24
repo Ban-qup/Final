@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/css/LogIn.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon/login.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Log-In</title>
+</head>
+<body>
+    <form id="regForm" action="">
+        <h1>Register:</h1>
+
+        <div class="tab">Name:
+            <p><label>
+                <input placeholder="First Name..." type="text" oninput="this.className = ''">
+            </label></p>
+            <p><label>
+                <input placeholder="Last Name..." type="text" oninput="this.className = ''">
+            </label></p>
+        </div>
+
+        <div class="tab">Birthday:
+            <p><label>
+                <input placeholder="dd" type="number" id="dayInput" oninput="this.className = ''">
+            </label></p>
+            <p><label>
+                <input placeholder="mm" type="number"  id="monthInput" oninput="this.className = ''" >
+            </label></p>
+            <p><label>
+                <input placeholder="yyyy" type="number"  id="yearInput" oninput="this.className = ''">
+            </label></p>
+        </div>
+
+        <div class="tab">Contact Info:
+            <p><label>
+                <input placeholder="E-mail..." type="email" oninput="this.className = ''">
+            </label></p>
+            <p><label>
+                <input placeholder="Phone..." type="number" id="phoneInput" oninput="this.className = ''">
+            </label></p>
+        </div>
+
+        <div class="tab">Login Info:
+            <p><label>
+                <input placeholder="Username..." type="text" oninput="this.className = ''">
+            </label></p>
+            <p><label>
+                <input placeholder="Password..." type="password" oninput="this.className = ''" minlength="8" maxlength="16">
+            </label></p>
+        </div>
+
+        <div style="overflow:auto;">
+            <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+        </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </div>
+    </form>
+
+    <script src="/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
